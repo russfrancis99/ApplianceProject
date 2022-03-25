@@ -89,3 +89,13 @@ class Fridge(Appliance):
         self.fridge_type = fridge_type
         self.set_power_consumption(Fridge.default_power_consumption)
 
+class Oven(Appliance):
+    """ Fridge class is a subclass of Appliance and defines the Attributes and methods of a refrigerator"""
+    default_power_consumption = 2000
+
+    def __init__(self, oven_type="electric fan"):
+        super().__init__()
+        self.name = "Refrigerator"
+        self.function = "Bakes and Grills Food"
+        self.oven_type = oven_type
+        self.set_power_consumption(Oven.default_power_consumption)  # set using class variable Oven.default_Power..
