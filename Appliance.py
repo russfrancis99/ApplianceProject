@@ -23,7 +23,7 @@ class EnergySupplier(object):
         return self.tariff
 
 class Appliance(object):
-    """The Appliance class is a base class for household appliances"""
+    """The Appliance class is  a base class for household appliances"""
 
     default_Energy_Supplier = EnergySupplier("EDF")
 
