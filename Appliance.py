@@ -17,7 +17,7 @@ class EnergySupplier(object):
         self.tariff = tariff
 
     def __str__(self):
-        return ("{} is an energy supplier that charges £ {} on plan {}".format(self.name, self.tariff, self.plan))
+        return ("{} is an energy supplier that charges £ {} on plan {}.".format(self.name, self.tariff, self.plan))
 
     def get_tariff(self):
         return self.tariff
