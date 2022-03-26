@@ -7,3 +7,8 @@ tim_toaster = Toaster()
 vera_vacuum = Vacuum()
 frosty_fridge = Fridge()
 olga_oven = Oven()
+
+print(tim_toaster)
+print(vera_vacuum)
+print(frosty_fridge)
+print(olga_oven)
