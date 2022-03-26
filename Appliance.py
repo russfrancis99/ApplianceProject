@@ -98,7 +98,6 @@ class Fridge(Appliance):
 class Oven(Appliance):
     """ Oven is a subclass of Appliance and defines the Attributes and methods of a refrigerator"""
     default_power_consumption = 2000
-
     def __init__(self, oven_type="electric fan"):
         super().__init__()
         self.name = "oven"
