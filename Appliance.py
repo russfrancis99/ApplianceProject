@@ -34,7 +34,7 @@ class Appliance(object):
         self.energy_supplier = energy_supplier
 
     def __str__(self):
-        return "{} is an application that {}".format(self.name, self.function)
+        return "A {} is an application that {}".format(self.name, self.function)
 
     def set_energy_supplier(self, energy_supplier):
         self.energy_supplier = energy_supplier
@@ -63,8 +63,8 @@ class Toaster(Appliance):
 
     def __init__(self, slots=2):
         super().__init__()
-        self.name = "Toaster"
-        self.function = "Toasts Slices of Bread"
+        self.name = "toaster"
+        self.function = "toasts slices of bread"
         self.slots = slots
         self.set_power_consumption(Toaster.default_power_consumption)
 
@@ -75,8 +75,8 @@ class Vacuum(Appliance):
 
     def __init__(self):
         super().__init__()
-        self.name = "Vacuum Cleaner"
-        self.function = "Vacuums The Floor"
+        self.name = "vacuum cleaner"
+        self.function = "vacuums carpets and floor"
         self.set_power_consumption(Vacuum.default_power_consumption)
 
 
@@ -86,8 +86,8 @@ class Fridge(Appliance):
 
     def __init__(self, fridge_type="under_counter"):
         super().__init__()
-        self.name = "Refrigerator"
-        self.function = "Keeps food items cool"
+        self.name = "fridge"
+        self.function = "keeps food items cool"
         self.fridge_type = fridge_type
         self.set_power_consumption(Fridge.default_power_consumption)
 
@@ -98,7 +98,7 @@ class Oven(Appliance):
 
     def __init__(self, oven_type="electric fan"):
         super().__init__()
-        self.name = "Oven"
-        self.function = "roasts, bakes and grills Food"
+        self.name = "oven"
+        self.function = "roasts, bakes and grills food"
         self.oven_type = oven_type
         self.set_power_consumption(Oven.default_power_consumption)  # set using class variable Oven.default_Power..
