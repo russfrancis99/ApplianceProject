@@ -45,7 +45,10 @@ class Appliance(object):
     def set_power_consumption(self, power_consumption):
         self.power_consumption = power_consumption
 
-    def calculate_cost(self, hours=0, minutes=0, seconds=0):
+    def get_power_consumption(self):
+        return self.power_consumption
+
+    def calculate_cost(self, hours=1, minutes=0, seconds=0):
         rate_per_minute = self.power_consumption / 60
         rate_per_second = self.power_consumption / 60
         total_kw = self.power_consumption * hours + minutes * rate_per_minute + seconds * rate_per_second
