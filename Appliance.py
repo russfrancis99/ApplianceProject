@@ -34,7 +34,7 @@ class Appliance(object):
         self.energy_supplier = energy_supplier
 
     def __str__(self):
-        return "{} is an application that does the {}".format(self.name, self.function)
+        return "{} is an application that {}".format(self.name, self.function)
 
     def set_energy_supplier(self, energy_supplier):
         self.energy_supplier = energy_supplier
@@ -93,12 +93,12 @@ class Fridge(Appliance):
 
 
 class Oven(Appliance):
-    """ Fridge class is a subclass of Appliance and defines the Attributes and methods of a refrigerator"""
+    """ Oven is a subclass of Appliance and defines the Attributes and methods of a refrigerator"""
     default_power_consumption = 2000
 
     def __init__(self, oven_type="electric fan"):
         super().__init__()
-        self.name = "Refrigerator"
-        self.function = "Bakes and Grills Food"
+        self.name = "Oven"
+        self.function = "roasts, bakes and grills Food"
         self.oven_type = oven_type
         self.set_power_consumption(Oven.default_power_consumption)  # set using class variable Oven.default_Power..
